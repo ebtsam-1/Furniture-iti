@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="json/products.js"></script>
+    <script src="json/category.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Furniture Store</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/furniture-store.css" />
+
+    <!--Google fonts -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Sofia&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="list">
+                <div class="logo">
+                    <h2 style="color: #7f5f84; font-family:  'Roboto', cursive;">Furniture for Life</h2>
+                </div>
+                <i class="fas fa-bars" id="faBars"></i>
+                <ul class="options">
+                    <li><a href="index.html">home</a></li>
+                    <li style="background-color: #7f5f84;"><a href="about.html" style="color:white;">about</a></li>
+                    <li><a href="features.html">features</a></li>
+                    <li><a href="collections.html">Categories</a></li>
+                    <li><a href="index.html #shope">shope</a></li>
+                    <li><a href="best-selling.html">best-selling</a></li>
+                    <li><a href="contact.html">contact-us</a></li>
+                </ul>
+                <div class="icons">
+                    <i class="fas fa-search "></i>
+                    <i class="fas fa-shopping-basket" onclick="cartOpenning()"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="about">
+        <div class="container">
+            <h2>About us</h2>
+            <h4 style="text-transform: capitalize;">Build your life</h4>
+            <div class="booster"></div>
+            <div class="content">
+                <div class="btns">
+                    <button id="first" class="tab-btn active" data-id="history">History</button>
+                    <button id="second" class="tab-btn" data-id="vision">Vision</button>
+                    <button id="third" class="tab-btn" data-id="goals">Goals</button>
+                </div>
+                <div class="text active" id="history">
+                    <h3>History</h3>
+                    <br>
+                    <br>
+                    <h4 style="text-transform: capitalize;">History is made by the greaters</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Dolorum neque nisi fugit ea, voluptas totam asperiores explicabo
+                        odio ad consequatur pariatur
+                        , culpa repellat hic ducimus
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Dolorum neque nisi fugit ea, voluptas totam asperiores explicabo
+                        odio ad consequatur pariatur
+                        , culpa repellat hic ducimus veniam molestiae at nesciunt maiores.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Dolorum neque nisi fugit ea, voluptas totam asperiores explicabo
+                        odio ad consequatur pariatur
+                        , culpa repellat hic ducimus.
+                        
+                    </p>
+                    <div class="social-media">
+                        <h3>Follow Us</h3>
+                        <ul class="active">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fas fa-home"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text" id="vision">
+                    <h3>Vision</h3>
+                    <h4>Securing Customer Transactions and Server Stability</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Dolorum neque nisi fugit ea, voluptas totam asperiores explicabo
+                        odio ad consequatur pariatur
+                       
+                    </p>
+                    <h4>Easy Digital Downloads</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Dolorum neque nisi fugit ea, voluptas totam asperiores explicabo
+                        odio ad consequatur pariatur
+                        Dolorum neque nisi fugit ea, voluptas totam asperiores explicabo
+                        odio ad consequatur pariatur
+                    </p>
+                    <h4>Setting the Foundation:</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Dolorum neque nisi fugit ea, voluptas totam asperiores explicabo
+                        odio ad consequatur pariatur
+                        Dolorum neque nisi fugit ea, voluptas totam asperiores explicabo
+                        odio ad consequatur pariatur
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Dolorum neque nisi fugit ea, voluptas totam asperiores explicabo
+                        odio ad consequatur pariatur
+                        Dolorum neque nisi fugit ea, voluptas totam asperiores explicabo
+                        odio ad consequatur pariatur
+                    </p>
+                    <div class="social-media">
+                        <h3>Follow Us</h3>
+                        <ul class="active">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fas fa-home"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text" id="goals">
+                    <h3>Goals</h3>
+                    <ol>
+                        <li>Provide customers a personalized experience.</li>
+                        <li>Go beyond blogging.</li>
+                        <li>Partner with influencers.</li>
+                        <li>Increase sales.</li>
+                        <li>Make business globally</li>
+                    </ol>
+                    <div class="social-media">
+                        <h3>Follow Us</h3>
+                        <ul class="active">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fas fa-home"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="footer">
+        <div class="container">
+            <div class="box">
+                <h3>The Shop</h3>
+                <ul>
+                    <li>Nearest Location</li>
+                    <li>Our Services</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Get Help</h3>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Shipping</li>
+                    <li>Returns</li>
+                    <li>Order Status</li>
+                    <li>Payment Option</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Join Us</h3>
+                <ul>
+                    <li>Sellers Policy</li>
+                    <li>Find A Job</li>
+                    <li>Contact Options</li>
+                    <li>Return Policy</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <ul class="active">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fas fa-home"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <h3 style="text-align: center; margin-top: 2rem; font-weight: 400; color: #7f5f84c4;">All Photos are copyrighted by Pexels.com</h3>
+    </section>
+    <script>
+        // about us
+
+        let aboutBtns = document.querySelectorAll(".tab-btn");
+        let about = document.querySelector(".about");
+        let textContent =  document.querySelectorAll('.text');
+
+       about.addEventListener("click", function(e){
+           let clickedBtn = e.target.dataset.id;
+
+
+           if (clickedBtn){
+            aboutBtns.forEach(function(btn){
+               btn.classList.remove('active');
+               e.target.classList.add('active')
+            })
+
+            textContent.forEach(function(ele){
+                  ele.classList.remove('active');
+                if(ele.id == clickedBtn){
+                    ele.classList.add('active');
+                }
+            })
+           }
+       })
+    </script>
+
+
+<div class="furn-cart" id="furnCart" >
+    <div class="closeCart" onclick="cartOpenning()">
+
+        <i class="fas fa-times"></i>
+    </div>
+
+
+    
+
+    <!--<div class="child">
+        <div class="img-text">
+            <img src="assets/D-off-white-disc.jpg" alt="">
+            <div class="text">
+                <p>Books Shelf 2234:Golden</p>
+                <h4>$660</h4>
+                <a href="">Delete</a>
+            </div>
+        </div>
+        </div>--->
+
+
+
+
+        <script src="js/cart.js"> </script>
+        
+    
+    
+  
+
+</div>
+
+
+
+     <script src="js/main.js"></script> 
+</body>
+
+</html>

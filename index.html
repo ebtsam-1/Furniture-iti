@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="json/products.js"></script>
+        <script src="json/category.js"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Online Store | Furniture Store</title>
+        <link rel="stylesheet" href="normalize.css"/>
+        <link rel="stylesheet" href="css/all.min.css"/>
+        <link rel="stylesheet" href="css/furniture-store.css"/>
+    
+     <!--Google fonts -->
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Sofia&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="mine">
+            <div class="container">
+                <div class="usd">
+                 <i class="fas fa-couch"></i>
+                </div>
+                <h2>Furniture <span>for</span> Life</h2>
+                <div class="links">
+                    <h3>S</h3>
+                    <span>
+                     <a href="#" id="signBtn" onclick="signAppear()">Sign In</a>
+                     <a href="#">Create An Account</a>
+                    </span>
+                   
+                </div>
+            </div>
+        </header>
+        <section class="landing">
+            <div class="container">
+                <h2>PAINT YOUR LIFE</h2>
+                <P>The real Beauty same Proportion of beauty and it appears in diferrent ways,<br> for some peaple it's like Sun shine.real Beauty same Proportion of beauty.<br> </P>
+            </div>
+        </section>
+        <nav>
+            <div class="container">
+                <div class="list">
+                    <div class="logo">
+                        <h2 style="color: #7f5f84; font-family:  'Roboto', cursive;">Furniture for Life</h2>
+                    </div>
+                    <i class="fas fa-bars" id="faBars"></i>
+                    <ul class="options">
+                        <li style="background-color: #7f5f84;"><a href="index.html" style="color:white;">home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="features.html">features</a></li>
+                        <li><a href="collections.html">Categories</a></li>
+                        <li><a href="#shope">shope</a></li>
+                        <li><a href="best-selling.html">best-selling</a></li>
+                        <li><a href="contact.html">contact-us</a></li>
+                    </ul>
+                    <div class="icons">
+                        <i class="fas fa-search "></i>
+                        <i class="fas fa-shopping-basket"  onclick="cartOpenning()">   </i>
+
+                    </div>
+                   
+                </div>
+             </div>
+        </nav>
+
+
+    
+        <!---------------------Start Categories------------------------- -->
+
+       
+       
+        <section class="categories">
+            <p id="add" style="text-align: center; font-size: 40px; color: #7f5f84; font-family: 'Dancing Script', cursive; font-weight: 600;">Categories</p><br><br>
+            <div class="container" id="container">
+
+
+                <script>
+
+                    for(var i=0;i<cat.length;i++)
+                    {
+                    var docu=document.getElementById("container");
+
+                    var el=document.createElement("div");
+                    docu.appendChild(el);
+                    el.className="box";
+                    var img=document.createElement("img");
+                    el.appendChild(img);
+                    img.src=cat[i].img;
+
+                    var overlay=document.createElement("div");
+                    el.appendChild(overlay);
+                    overlay.className="overlay";
+
+                    var p=document.createElement("a");
+                    overlay.appendChild(p);
+                    p.innerHTML=cat[i].name;
+                    p.href="collections.html?"+cat[i].id;
+
+                    }
+
+                </script>
+                
+            
+            </div>
+        </section>
+
+
+        <!-------------------End Category------------------------>
+       
+
+
+
+        <!-- New collection -->
+        <section class="banner-1">
+             <div class="container">
+                 <div class="best-seller">
+                    <h2>Best Seller</h2>
+                    <div class="content">
+                        <div class="image">
+                             <img src="assets/banner-1-1.jpg" alt="#">
+                        </div>
+                        <div class="text">
+                            <h3>Categories</h3>
+                            <ul>
+                                 <li>Bedrooms</li>
+                                 <li>Tables</li>
+                                 <li>Living Rooms</li>
+                                 <li>Kichen Essentials</li>
+                                 <li>Bathroom Essentials</li>
+                            </ul>
+                            <img src="assets/banner-1-2.jpg" alt="#">
+                        </div>
+                    </div>
+                 </div>
+                 <div class="best-seller">
+                     <h2>New collections</h2>
+                     <div class="content">
+                         <div class="text">
+                             <img src="assets/banner-1-3.jpg" alt="#">
+                             <div class="box">
+                                 <p>Check Our New <br> collections</p>
+                                 <a href="#">Learn More</a>
+                             </div>
+                         </div>
+                         <div class="image">
+                             <img src="assets/banner-1-4.jpg" alt="#">
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        </section> 
+        <!---Images Slider -->
+        <div class="slider-container">
+            <div class="slide">
+                <img src="Assets/pexels-max-vakhtbovych-5998120.jpg" alt="#">
+                <h1>Hello</h1>
+            </div>
+            <div class="slide">
+                <img src="Assets/pexels-max-vakhtbovych-6207819.jpg" alt="#">
+            </div>
+            <div class="slide">
+                <img src="Assets/pexels-max-vakhtbovych-6492397.jpg" alt="#">
+            </div>
+            <div class="slide">
+                <img src="Assets/pexels-max-vakhtbovych-6523271.jpg" alt="#">
+            </div>
+            <div class="slide">
+                <img src="Assets/pexels-max-vakhtbovych-6523281.jpg" alt="#">
+            </div>
+            <div class="slide">
+                <img src="Assets/pexels-max-vakhtbovych-6527063.jpg" alt="#">
+            </div>
+        </div>
+        <div class="btn-container">
+            <button id="prev-btn" class="pagination">Prev</button>
+            <button id="next-btn" class="pagination">Next</button>
+        </div>
+     
+  
+    
+       <section class="offer-3">
+            <div class="container">
+                <div class="content"><a href="best-selling.html" target="_blank"><img src="assets/couch.png" alt="#"></a></div>
+                <div class="text">
+                    <p>Get Up to 40% OFF And Build Your Dream Home</p>
+               </div>
+            </div>
+       </section> 
+
+        <!-- Shop -->
+
+        <section class="categories price" id="shope">
+            <div class="container">
+                <div class="box">
+                    <img src="assets/D-blue-bed.jpg" alt="#">
+                    <div class="over">
+                        <p>Blue Bed KT-115789</p>
+                        <h3>Price: US <span>$500</span></h3>
+                        <div class="cart">
+                            <i class="fas fa-shopping-basket"></i>
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="assets/D-golden-books-shelf.jpg" alt="#">
+                    <div class="over">
+                        <p>Books Shelf 2234:Golden</p>
+                        <h3>Price: US <span>$360</span></h3>
+                        <div class="cart">
+                            <i class="fas fa-shopping-basket"></i>
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="assets/D-summer-couch.jpg" alt="#">
+                    <div class="over">
+                        <p>Summer Couch D:07689</p>
+                        <h3>Price: US <span>$620</span></h3>
+                        <div class="cart">
+                            <i class="fas fa-shopping-basket"></i>
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="assets/D-off-white-disc.jpg" alt="#">
+                    <div class="over">
+                        <p>Desk Chair 223:White</p>
+                        <h3>Price: US <span>$480</span></h3>
+                        <div class="cart">
+                            <i class="fas fa-shopping-basket"></i>
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="categories price">
+            <div class="container">
+                <div class="box">
+                    <img src="assets/D-blue-couch.jpg" alt="#" onclick="cartAdding()">
+                    <div class="over">
+                        <p>Blue Soft Couch L-6789</p>
+                        <h3>Price: US <span>$677</span></h3>
+                        <div class="cart">
+                            <i class="fas fa-shopping-basket"></i>
+                            <a href="" id="addToCart" >Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="assets/D-white-soft-food-table.jpg" alt="#">
+                    <div class="over">
+                        <p>Food Table KT-00234</p>
+                        <h3>Price: US <span>$740</span></h3>
+                        <div class="cart">
+                            <i class="fas fa-shopping-basket"></i>
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="assets/D-yellow-set.jpg" alt="#">
+                    <div class="over">
+                        <p>Yellow Set D-00436</p>
+                        <h3>Price: US <span>$520</span></h3>
+                        <div class="cart">
+                            <i class="fas fa-shopping-basket"></i>
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="assets/D-white-bed-with-shelf.jpg" alt="#">
+                    <div class="over">
+                        <p>Bed with Shelf 99420-White</p>
+                        <h3>Price: US <span>$910</span></h3>
+                        <div class="cart">
+                            <i class="fas fa-shopping-basket"></i>
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        
+        <!--- Quality Over Quantity 
+         the real Beauty which is inside all of us.
+         Allah gave us all the same Proportion of beauty and it appears 
+         in diferrent ways , for some peaple it's like Sun shine. 
+         some others are like the Moon they show us the right way
+        -->
+        <section class="theory">
+            <div class="container">
+                <h2>Quality Over Quantity</h2>
+                <p>
+                The real Beauty which is inside all of us. <br>
+                Allah gave us all the same Proportion of beauty and it appears 
+                in diferrent ways, <br> For some peaple it's like Sun shine.
+                Some others are like the Moon. <br> They show us the right way.
+                </p>
+            </div>
+        </section>
+        <section class="banner-2">
+            <div class="container">
+                <div class="text">
+                    <i class="fas fa-couch"></i>
+                   <h2>Furniture <span>for</span> Life</h2>
+                </div>
+                <div class="box">
+                    <div class="child">
+                        <div class="image-1">
+                            <img src="assets/banner-2-7.jpg" alt="#">
+                            <div class="caption">
+                                <h4>Up To 15% OFF</h4>
+                                <p>Sign Up And Get Your Offer For Your First Purchase</p>
+                                <a href="best-selling.html" target="_blank">Shope Now</a>
+                            </div>
+                        </div>
+                        <div class="image-2">
+                            <img src="assets/banner-2-2.jpg" alt="#">
+                            <div class="caption">
+                                <h4>Up To 15% OFF</h4>
+                                <p>Sign Up And Get Your Offer For Your First Purchase</p>
+                                <a href="best-selling.html" target="_blank">Shope Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="image-2">
+                            <img src="assets/banner-2-8.jpg" alt="#">
+                            <div class="caption">
+                                <h4>Up To 15% OFF</h4>
+                                <p>Sign Up And Get Your Offer For Your First Purchase</p>
+                                <a href="best-selling.html" target="_blank">Shope Now</a>
+                            </div>
+                        </div>
+                        <div class="image-1">
+                            <img src="assets/banner-2-3.jpg" alt="#">
+                            <div class="caption">
+                                <h4>Up To 15% OFF</h4>
+                                <p>Sign Up And Get Your Offer For Your First Purchase</p>
+                                <a href="best-selling.html" target="_blank">Shope Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="image-1">
+                            <img src="assets/banner-2-9.jpg" alt="#">
+                            <div class="caption">
+                                <h4>Up To 15% OFF</h4>
+                                <p>Sign Up And Get Your Offer For Your First Purchase</p>
+                                <a href="best-selling.html" target="_blank">Shope Now</a>
+                            </div>
+                        </div>
+                        <div class="image-2">
+                            <img src="assets/banner-2-4.jpg" alt="#">
+                            <div class="caption">
+                                <h4>Up To 15% OFF</h4>
+                                <p>Sign Up And Get Your Offer For Your First Purchase</p>
+                                <a href="best-selling.html" target="_blank">Shope Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------------contact us--------------->
+        <section class="contact-us">
+            <div class="header"><h2>Contact Us</h2></div>
+            <div class="container">
+                <div class="box">
+                    <div class="child">
+                        <div class="icn">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Address</h3>
+                        </div>
+                        <p>#30 ABC Street XYZ NewYork</p>
+                    </div>
+                    <div class="child">
+                        <div class="icn">
+                            <i class="fas fa-paper-plane"></i>
+                            <h3>E-mail</h3>
+                        </div>
+                        <p>example@gmail.com</p>
+                    </div>
+                    <div class="child">
+                        <div class="icn">
+                            <i class="fas fa-phone-alt"></i>
+                            <h3>Phone</h3>
+                        </div>
+                        <p>+01 1123456678</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <form action="thanks.html" method="post">
+                        <input type="text" placeholder="Full Name">
+                        <input type="email" placeholder="E-mail">
+                        <textarea rows="10" placeholder="Type Your Message"></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------end contact----------------------->
+
+
+        <section class="footer">
+            <div class="container">
+                <div class="box">
+                    <h3>The Shop</h3>
+                    <ul>
+                        <li>Nearest Location</li>
+                        <li>Our Services</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditions</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>Get Help</h3>
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Shipping</li>
+                        <li>Returns</li>
+                        <li>Order Status</li>
+                        <li>Payment Option</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>Join Us</h3>
+                    <ul>
+                        <li>Sellers Policy</li>
+                        <li>Find A Job</li>
+                        <li>Contact Options</li>
+                        <li>Return Policy</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>Follow Us</h3>
+                    <ul class="active">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fas fa-home"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 style="text-align: center; margin-top: 2rem; font-weight: 400; color: #7f5f84c4;">All Photos are copyrighted by Pexels.com</h3>
+        </section>
+
+       <!-- sign in -->
+
+       <div class="sign-container" id="signContainer">
+           <div class="sign-box">
+               <div id="close" onclick="signAppear()">
+                   <i class="fas fa-times"></i>
+               </div>
+               <form action="index.html" onsubmit="setUser()">
+                   <h2 id="sign">Sign in</h2>
+                   <label for="username">Enter Your username</label>
+                   <br>
+                   <input type="text" name="username" id="username">
+                   <br>
+                   <label for="password">Enter Your password</label>
+                   <br>
+                   <input type="password" name="password" id="password">
+                   <br>
+                   <br>
+                   <input type="submit" value="Sign in" id="submit">
+                   <span>Forgot Password? <a href="#">Click here</a></span>
+                   <span>Don't have an account? <a href="#">Click here</a></span>
+               </form>
+           </div>
+       </div>
+
+
+
+
+       
+
+       <!-- create account -->
+
+       <div class="acountCreate"></div>
+
+
+         <!-- CAAAArt-->
+
+         <!--style='overflow-y: scroll;'-->
+
+<div class="furn-cart" id="furnCart" >
+    <div class="closeCart" onclick="cartOpenning()">
+
+        <i class="fas fa-times"></i>
+    </div>
+
+
+    
+
+    <!--<div class="child">
+        <div class="img-text">
+            <img src="assets/D-off-white-disc.jpg" alt="">
+            <div class="text">
+                <p>Books Shelf 2234:Golden</p>
+                <h4>$660</h4>
+                <a href="">Delete</a>
+            </div>
+        </div>
+        </div>--->
+
+
+
+
+        <script src="js/cart.js"> </script>
+        
+    
+    
+  
+
+</div>
+
+
+<!----------
+<script>
+        var cart=document.getElementById("cartt");
+        if(localStorage.cart!=undefined){
+        //cart.innerHTML=localStorage.cart;
+        cart.innerHTML=localStorage.AllCart;
+        }
+        else
+        cart.innerHTML=0;
+        
+        </script>
+-->
+
+
+
+        <script src="js/main.js"></script>
+    
+    </body>
+</html>
+
